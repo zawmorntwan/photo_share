@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028130518671",
+    "project_id": "photo-share-zmt",
+    "storage_bucket": "photo-share-zmt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028130518671:android:8386f1e8b87b4977afe2fa",
+        "android_client_info": {
+          "package_name": "com.example.photo_share"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUdv3XDYYbmoeXffQ8Yyb_5-NlwDCpu00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
