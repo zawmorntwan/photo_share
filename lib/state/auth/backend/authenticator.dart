@@ -7,6 +7,7 @@ import 'package:photo_share/state/auth/models/auth_result.dart';
 import 'package:photo_share/state/posts/typedefs/user_id.dart';
 
 class Authenticator {
+  const Authenticator();
   UserId? get userId => FirebaseAuth.instance.currentUser?.uid;
   bool get isAlreadyLoggedIn => userId != null;
   String get displayName =>
@@ -58,6 +59,7 @@ class Authenticator {
     ]);
 
     final signInAccount = await googleSignIn.signIn();
+
     if (signInAccount == null) {
       return AuthResult.aborted;
     }
