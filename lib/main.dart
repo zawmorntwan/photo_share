@@ -42,7 +42,6 @@ class App extends StatelessWidget {
       home: Consumer(
         builder: (context, ref, child) {
           final isLoggedIn = ref.watch(isLoggedInProvider);
-          isLoggedIn.log();
           if (isLoggedIn) {
             return const MainView();
           } else {
@@ -65,7 +64,7 @@ class MainView extends StatelessWidget {
         title: const Text('Main View'),
       ),
       body: Consumer(
-        builder: (context, ref, child) {
+        builder: (_, ref, child) {
           return TextButton(
             onPressed: () async {
               await ref.read(authStateProvider.notifier).logOut();
