@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:photo_share/views/components/constants/strings.dart';
+import 'package:photo_share/views/constants/strings.dart';
 import 'package:photo_share/views/components/loading/loading_screen_controller.dart';
 
 class LoadingScreen {
@@ -36,6 +36,7 @@ class LoadingScreen {
   }) {
     final state = Overlay.of(context);
 
+    // ignore: unnecessary_null_comparison
     if (state == null) {
       return null;
     }
