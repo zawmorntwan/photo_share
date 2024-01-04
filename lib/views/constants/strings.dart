@@ -36,4 +36,10 @@ class Strings {
   static const signUpOn = 'Sign up on ';
   static const orCreateAnAccountOn = ' or create an account on ';
   const Strings._();
+
+  // log out
+  static const logOut = 'Log out';
+  static const areYouSureThatYouWantToLogOutOfTheApp =
+      'Are you sure that you want to log out of the app?';
+  static const cancel = 'Cancel';
 }
